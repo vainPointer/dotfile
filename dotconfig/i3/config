@@ -33,7 +33,9 @@ bindsym $mod+Return exec alacritty
 bindsym Mod1+q kill
 
 # start program launcher
-bindsym Mod1+space exec --no-startup-id dmenu_recency
+#bindsym Mod1+space exec --no-startup-id dmenu_recency
+#bindsym Mod1+c exec --no-startup-id "rofi -show calc"
+bindsym Mod1+space exec --no-startup-id "rofi -combi-modi window,drun,run,ssh -show combi -modi combi"
 
 # launch categorized menu
 bindsym $mod+grave exec --no-startup-id morc_menu
