@@ -30,7 +30,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym Mod1+q kill
+bindsym $mod+q kill
 
 # start program launcher
 #bindsym Mod1+space exec --no-startup-id dmenu_recency
