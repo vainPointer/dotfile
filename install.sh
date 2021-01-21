@@ -9,3 +9,7 @@ ln -sfv "$CONFIG_DIR/fish/config.fish" "$LOCAL_DIR/fish/config.fish"
 ln -sfv "$CONFIG_DIR/i3/config"        "$LOCAL_DIR/i3/config"
 ln -sfv "$CONFIG_DIR/i3status/config"  "$LOCAL_DIR/i3status/config"
 ln -sfv "$CONFIG_DIR/mimeapps.list"    "$LOCAL_DIR/mimeapps.list"
+
+ln -sfv "$SOURCE_DIR/.bashrc"          "$HOME/.bashrc"
+
+sudo ln -sfv "$SOURCE_DIR/hosts"       "/etc/hosts"
