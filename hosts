@@ -1,7 +1,7 @@
 # Tips: fix dns problem in www.ipaddress.com
 #<ip-address>	<hostname.domain.org>	<hostname>
-127.0.0.1       localhost.localdomain	localhost	manjaro
-::1             localhost.localdomain	localhost	manjaro
+127.0.0.1       localhost.localdomain	localhost	arch
+::1             localhost.localdomain	localhost	arch
 
 # Google Mirror Start
 180.215.225.229 google.com # g.vovososo.com
