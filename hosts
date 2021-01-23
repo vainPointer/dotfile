@@ -2,6 +2,11 @@
 #<ip-address>	<hostname.domain.org>	<hostname>
 127.0.0.1       localhost.localdomain	localhost	manjaro
 ::1             localhost.localdomain	localhost	manjaro
+
+# Google Mirror Start
+180.215.225.229 google.com # g.vovososo.com
+# 76.76.21.21   google.com # elgoog.im
+# Google Mirror End
  
 # DuckDuckGo Start
 40.89.244.232   duckduckgo.com
