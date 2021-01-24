@@ -39,15 +39,18 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 ##         Auto Startup         ##
 ##################################
 
-# xss-lock use i3lock to lock the screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# xss-lock can lock the screen before suspend.
+# ISSUE: logind needs DE. see: https://bbs.archlinux.org/viewtopic.php?id=242814
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xautolock -time 30 -locker "i3lock -c 000000; systemctl suspend"
+exec --no-startup-id setxkbmap -option "ctrl:nocaps"
 exec --no-startup-id feh --randomize --bg-fill ~/Downloads/Wallpapers
 exec --no-startup-id clipit
-exec --no-startup-id fcitx5
 # exec --no-startup-id caffeine
 # exec --no-startup-id blueman-applet
+exec --no-startup-id fcitx5
 exec --no-startup-id emacs --daemon
-exec --no-startup-id setxkbmap -option "ctrl:nocaps"
+exec --no-startup-id fluxgui
 
 ##################################
 ##      Workspaces Control      ##
@@ -176,9 +179,9 @@ mode "resize" {
 
 # Open specific applications in floating mode
 for_window [title="Library"] floating enable
-for_window [title="alsamixer"] floating enable border pixel 1
-for_window [title="ranger"] floating enable border pixel 1
-for_window [title="Preferences"] floating enable border normal
+for_window [title="alsamixer"] floating enable border pixel 0
+for_window [title="ranger"] floating enable border normal
+for_window [title="Preferences"] floating enable
 for_window [class="fcitx5"] floating enable
 for_window [class="okular"] floating enable
 for_window [title="Character Map"] floating enable
