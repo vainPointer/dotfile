@@ -1,3 +1,7 @@
+# locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # useful functions
 ex (){
   if [ -f $1 ] ; then
@@ -42,5 +46,6 @@ alias cp='cp -i'
 alias rm='rm -i'
 alias vi='emacsclient -t'
 alias emacs='emacsclient -c'
+alias calc='speedcrunch &'
 alias pantex="pandoc --template=$HOME/github/dotfile/template/pandoc.tex --pdf-engine=xelatex"
 
