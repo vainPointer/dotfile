@@ -4,24 +4,15 @@
 ::1             localhost.localdomain	localhost	arch
 
 # Google Mirror Start
-180.215.225.229 google.com # g.vovososo.com
-# 76.76.21.21   google.com # elgoog.im
+180.215.225.229	google.com # g.vovososo.com
 # Google Mirror End
  
 # DuckDuckGo Start
-40.89.244.232   duckduckgo.com
+40.89.244.232	duckduckgo.com
 # DuckDuckGo End
 
 # Github Start
-199.232.96.133  raw.githubusercontent.com
+# 199.232.96.133  raw.githubusercontent.com
+199.232.4.133	raw.githubusercontent.com
 140.82.114.3	gist.github.com
-199.232.96.133  avatars0.githubusercontent.com
-199.232.96.133  avatars1.githubusercontent.com
-199.232.96.133  avatars2.githubusercontent.com
-199.232.96.133  avatars3.githubusercontent.com
-199.232.96.133  avatars4.githubusercontent.com
-199.232.96.133  avatars5.githubusercontent.com
-199.232.96.133  avatars6.githubusercontent.com
-199.232.96.133  avatars7.githubusercontent.com
-199.232.96.133  avatars8.githubusercontent.com
 # Github End

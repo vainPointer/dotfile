@@ -44,8 +44,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias cp='cp -i'
 alias rm='rm -i'
-alias vi='emacsclient -t'
-alias emacs='emacsclient -c'
+alias vi='emacsclient -c'
 alias calc='speedcrunch &'
 alias pantex="pandoc --template=$HOME/github/dotfile/template/pandoc.tex --pdf-engine=xelatex"
 
