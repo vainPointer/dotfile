@@ -1,6 +1,7 @@
 # locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+PATH=~/.local/bin:$PATH
 
 # useful functions
 ex (){
@@ -27,9 +28,12 @@ ex (){
 open (){
   filename=$1
   filetype=${filename##*.}
-  echo $filetype
   if [[ $filetype == 'pdf' ]]; then
-    okular $filename
+    zathura --fork $filename
+  elif [[ $filetype == 'md' ]]; then
+    typora $filename &
+  elif [[ $filetype  == 'html' ]]; then
+    firefox $filename
   fi
 }
 
