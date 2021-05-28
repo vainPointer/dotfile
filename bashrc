@@ -3,6 +3,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 PATH=~/.local/bin:$PATH
 
+if [[ -z $DISPLAY  ]] && [[ $(tty) = /dev/tty1  ]]; then
+    exec startx
+fi
+
 # useful functions
 ex (){
   if [ -f $1 ] ; then
@@ -51,4 +55,5 @@ alias rm='rm -i'
 alias vi='emacsclient -c'
 alias calc='speedcrunch &'
 alias pantex="pandoc --template=$HOME/github/dotfile/template/pandoc.tex --pdf-engine=xelatex"
+
 
