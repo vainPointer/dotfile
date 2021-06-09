@@ -3,14 +3,14 @@ set print pretty on
 set pagination off
 set confirm off
 
-# source ~/github/peda/peda.py
+# source ~/github/GDB/peda/peda.py
 
 source ~/.gef.py
 
 # source /usr/share/pwndbg/gdbinit.py
 
-# source ~/github/Pwngdb/pwngdb.py
-# source ~/github/Pwngdb/angelheap/gdbinit.py
+# source ~/github/GDB/Pwngdb/pwngdb.py
+# source ~/github/GDB/Pwngdb/angelheap/gdbinit.py
 # 
 # define hook-run
 # python
