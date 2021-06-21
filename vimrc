@@ -65,6 +65,7 @@ set autoread				" autoreadchange
 set mouse=a					" mouseenable
 set wildmenu
 set wildmode=full
+set tags=tags,./**/tags
 
 " ------------------------------------------------
 "  4.Keyboard Shortcuts
@@ -76,6 +77,7 @@ map <F5> :call CompileCode()<CR>
 map <F6> :call RunResult()<CR>
 map <F7> :call UseTestData()<CR>
 map <F12> :w<CR>:make<CR>
+map <C-X> :cscope find c <cword><CR>
 
 " ------------------------------------------------
 "  6.Compile Functions
